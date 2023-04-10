@@ -1,0 +1,6 @@
+<!-- 注意必须真机调试 -->
+<view bindtap="editPic">
+图片
+</view>
+<image src="{{chooseUrl}}" wx:if="{{chooseUrl}}" mode="widthFix"></image>
+<image src="{{picUrl}}" wx:if="{{picUrl}}" mode="widthFix"></image>

@@ -1,0 +1,4 @@
+
+<view  wx:for="{{GoodNumber}}" wx:for-item="Goods" >
+  <view class="aaa {{Goods.className}}"  bindtap="change"  data-index = '{{index}}' >name:{{Goods.name}} id:{{Goods.id}} </view>
+</view>

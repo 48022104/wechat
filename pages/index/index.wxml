@@ -1,0 +1,6 @@
+<view bindtap="goScroll">头部滚动出现</view>
+<view bindtap="goPubu">瀑布体</view>
+<view bindtap="goSelect">select</view>
+<view bindtap="goMore">循环</view>
+<view bindtap="goCrop">图片裁切</view>
+<view style="position: fixed; height: {{bottomHeight + 'px'}}; background: #000;"></view>

@@ -1,0 +1,12 @@
+/* pages/test/test.wxss */
+.header{ background: red; position: fixed; top: 0; left: 0; right: 0; z-index: 1; }
+page{background: #f2f2f2;}
+.pubu{display:flex; padding: 20rpx; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;  }
+/* .pubu_none{opacity: 0;} */
+.goods { border-radius: 10rpx; background:#fff; margin-bottom: 10px; display:flex;flex-direction: column; align-items: center;}
+.goods image{ width: 345rpx;border-radius: 10rpx 10rpx 0 0;}
+.pubu_none{position: fixed; top: 0; left: 0;}
+text{ font-size: 28rpx; padding: 20rpx;}
+.add{ width: 100%; line-height: 100rpx; display:flex;justify-content: center; height: 200rpx;}
+
+

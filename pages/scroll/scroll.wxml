@@ -1,0 +1,19 @@
+<view bindtap="goBack" class="header" style="padding-top: {{topHeight}}px; height: {{headerHeight}}px; opacity: {{opacity}};">
+ 
+</view>
+
+<view bindtap="goBack" class="header" style="background: #000; padding-top: {{topHeight}}px; height: {{headerHeight}}px; opacity: {{1-opacity}};">
+ 
+</view>
+
+
+<scroll-view style="background: green; height:{{screenHeight + 'px'}};" scroll-y="true" bindscroll="scroll">
+ 
+  <view style="width: 100rpx; height: 3000rpx;background:yellow"></view>
+
+
+</scroll-view>
+
+
+
+

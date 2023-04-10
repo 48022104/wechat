@@ -1,0 +1,46 @@
+
+
+<view class="header" bindtap="goBack" style="padding-top: {{topHeight}}px; height: {{headerHeight}}px; opacity: {{opacity}};">
+ 
+</view>
+<view class="top_space" style="padding-top: {{topHeight}}px; height: {{headerHeight}}px;"></view>
+<scroll-view bindscrolltolower='addGoods' refresher-enabled='true'	 scroll-y="true" style=" height:{{screenHeight-topHeight-headerHeight}}px">
+  <view class="pubu" >
+  <view class="pubu_left">
+    <view wx:for="{{leftList}}" wx:for-item="lgoods" wx:key class="goods">
+      <image src="{{lgoods.url}}" mode='widthFix'></image>
+      <text>{{lgoods.title}}</text>
+    </view>
+  </view>
+
+  <view class="pubu_right">
+    <view wx:for="{{rightList}}" wx:for-item="rgoods" wx:key class="goods">
+      <image src="{{rgoods.url}}" mode='widthFix'></image>
+      <text>{{rgoods.title}}</text>
+    </view>
+  </view>
+  <view class="add" wx:if="{{btn == 1}}" >显示下10条</view>
+<view class="add" wx:if="{{btn == 0}}">没有更多图片了</view>
+
+</view>
+
+
+
+</scroll-view>
+
+
+<!-- <view class="add" wx:if="{{btn == 1}}" bindtap="addGoods">添加</view>
+<view class="add" style="background: #dcdcdc;" wx:if="{{btn == 0}}" bindtap="addGoods">没有更多图片了</view> -->
+
+<view class="pubu pubu_none" style="opacity: 0;">
+    <view wx:for="{{list}}" wx:for-item="goods" wx:key class="goods goods_in">
+      <image src="{{goods.url}}" mode='widthFix' class="goodsPic"></image>
+      <text>{{goods.title}}</text>
+    </view>
+</view>
+
+
+
+
+
+
